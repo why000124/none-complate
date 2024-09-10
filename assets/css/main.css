@@ -702,7 +702,7 @@ section,
 }
 
 .hero h2 span {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .hero p {
@@ -1323,7 +1323,7 @@ section,
 
 .pricing .pricing-item ul .na {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .pricing .btn-wrap {
