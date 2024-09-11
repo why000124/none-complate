@@ -705,6 +705,10 @@ section,
     width: 100%;
     height: auto;
   }
+  .featured .post-img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .hero h2 span {
@@ -921,6 +925,7 @@ section,
   background: var(--accent-color);
   color: var(--contrast-color);
   border-color: var(--accent-color);
+  border: 3px solid greenyellow;
 }
 
 .features .nav-link.active h4 {
