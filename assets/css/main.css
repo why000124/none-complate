@@ -700,6 +700,12 @@ section,
   font-size: 48px;
   font-weight: 700;
 }
+@media (max-width: 480px) {
+  .hero h2 img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .hero h2 span {
   text-decoration: none;
