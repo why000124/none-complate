@@ -1,10 +1,10 @@
 <?php
-$servername = "localhost";
+$servername = "http://localhost/";
 $username = "root";
 $password = "";
-$dbname=information_schema
+$dbname="college";
 // Create connection
-$conn = new mysqli($servername, $username, $password,information_schema);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
