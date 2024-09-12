@@ -5,6 +5,7 @@ include 'config.php'; // ไฟล์เชื่อมต่อฐานข้�
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
+    dd($username);
 
     // ป้องกัน SQL Injection
     $username = mysqli_real_escape_string($conn, $username);
