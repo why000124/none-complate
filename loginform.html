@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -101,16 +101,16 @@
         margin-right: 50px;
       }
     </style>
-    <form>
+    <form method="POST" action="login.php">
       <!-- Email input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="email" id="form2Example1" class="form-control" />
+        <input type="text" name="username" id="form2Example1" class="form-control" />
         <label class="form-label" for="form2Example1">Email address</label>
       </div>
 
       <!-- Password input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="password" id="form2Example2" class="form-control" />
+        <input type="password" name="password" id="form2Example2" class="form-control" />
         <label class="form-label" for="form2Example2">Password</label>
       </div>
 
