@@ -5,7 +5,6 @@ include 'config.php'; // ไฟล์เชื่อมต่อฐานข้�
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    dd($username);
 
     // ป้องกัน SQL Injection
     $username = mysqli_real_escape_string($conn, $username);
@@ -14,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // เข้ารหัสรหัสผ่าน (ในที่นี้ใช้ md5 สำหรับตัวอย่าง แต่แนะนำให้ใช้ bcrypt หรือ hashing ที่ปลอดภัยกว่านี้)
 
     // ตรวจสอบข้อมูลในฐานข้อมูล
-    $sql = "SELECT id FROM users WHERE username='$username' AND password='$hashed_password'";
+    $sql = "SELECT id FROM user WHERE user='$username'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) == 1) {
