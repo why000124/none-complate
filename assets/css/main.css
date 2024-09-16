@@ -700,6 +700,7 @@ section,
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  margin-top: 60px;
 }
 @media (max-width: 480px) {
   .hero h2 img {
